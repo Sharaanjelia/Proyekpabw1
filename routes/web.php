@@ -13,3 +13,7 @@ Route::get('/rekomendasi-foto', [GayaFotoController::class, 'index']);
 use App\Http\Controllers\DestinasiController;
 
 Route::get('/destinasi-populer', [DestinasiController::class, 'populer']);
+
+use App\Http\Controllers\PaketWisataController;
+
+Route::get('/paket-wisata', [PaketWisataController::class, 'index'])->name('paket.wisata');
